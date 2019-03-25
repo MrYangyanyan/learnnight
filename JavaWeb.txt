@@ -1,0 +1,22 @@
+Servlet:
+Servlet 容器:
+
+
+第一个web应用程序：开发，并部署到Tomcat服务器下运行
+1）.在Eclipse新建一个Java Project
+2）.在Java项目下创建web开发的目录结构
+
+	_Web名子 			:是web应用程序的根目录
+		_WEB-INF		：必须包含的文件夹
+			-classes	：一个存放.class文件的文件夹
+			-lib		：一个存放个各种需要的jar包
+			web.xml		：必须含有的一个配置文件
+		html页面
+		jsp页面
+		图片...
+
+3).把web应用程序目录复制部署到Tomcat下的webapps文件夹中
+
+
+以上开发部署稍有些麻烦：即需要将web程序根目录复制部署到Tomcat中
+解决：在Tomcat下conf目录下依此创建cataina\localhost目录，然后在localhost下以这个web程序名建立一个.xml文件并配置web程序的物理目录
